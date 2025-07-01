@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav>
-        <p>"Ek Farook Baat Kahu Ijazat hai ?? Tuhjse Pyar karne ki Meri adat hai 😘"</p>
+        <p>"Ek Baat Kahu Ijazat hai ?? Tuhjse Pyar karne ki Meri adat hai 😘"</p>
 
     </nav>
     <br>
@@ -119,6 +119,19 @@
             <p class="caption">First secret meet <br>Only me and meri jaan (HomeAlone)</p>
             <p class="timestamp">14th June 2025 • 11:32 PM</p>
         </div>
+        <div class="memory-card expandable">
+            <img src="./1.jpeg" alt="Cover Image" class="cover-image" onclick="toggleGallery(this)">
+            <div class="expanded-gallery">
+              <img src="./2.jpeg" alt="Extra 1">
+              <img src="./3.jpeg" alt="Extra 2">
+              <img src="./4.jpeg" alt="Extra 3">
+              <img src="./5.jpeg" alt="Extra 1">
+              <img src="./6.jpeg" alt="Extra 2">
+              <img src="./7.jpeg" alt="Extra 3">
+            </div>
+            <p class="caption">First Secret for ice berg 🍨💞</p>
+            <p class="timestamp">30th June 2025 • 12:30 PM</p>
+          </div>
 
         <!-- Add more memory-card divs here as needed -->
 
@@ -148,6 +161,14 @@
           video.play();
           btn.style.display = 'none'; // Hide button after enabling sound
         });
+        function toggleGallery(clickedImage) {
+    const gallery = clickedImage.nextElementSibling;
+    if (gallery.style.display === "flex") {
+      gallery.style.display = "none";
+    } else {
+      gallery.style.display = "flex";
+    }
+  }
       </script>
       
 

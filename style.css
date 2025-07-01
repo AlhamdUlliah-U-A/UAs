@@ -273,6 +273,42 @@ footer p {
 }
 
 
+/* Expandable memory card */
+.memory-card.expandable {
+  position: relative;
+  cursor: pointer;
+}
+
+.cover-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.cover-image:hover {
+  transform: scale(1.03);
+}
+
+.expanded-gallery {
+  display: none;
+  margin-top: 0.5rem;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.expanded-gallery img {
+  width: 85px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin: 3px;
+}
+
 /* Responsive adjustments for video on smaller screens */
 @media screen and (max-width: 768px) {
   .video-container {

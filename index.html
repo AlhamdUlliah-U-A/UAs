@@ -68,6 +68,14 @@
                   </video>
                 </div>
                 <button id="unmuteBtn">Play</button>
+            <!-- another video  -->
+                <div class="landscape-video-section">
+                    <video id="landscapeVideo" loop playsinline>
+                        <source src="./km_AU_720p_50f_20260420_014235.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <button id="landscapeBtn" onclick="playLandscape()">Play Video 🎥</button>
 
                 <!-- Memories Section -->
 <section class="memories-section">
@@ -175,6 +183,11 @@
       gallery.style.display = "flex";
     }
   }
+         function playLandscape() {
+    const vid = document.getElementById("landscapeVideo");
+    vid.muted = false;
+    vid.play();
+}
       </script>
       
 
